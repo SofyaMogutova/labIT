@@ -80,6 +80,6 @@ clearButton.addEventListener('click', (event) => {
 })
 exitButton.addEventListener('click', (event) => {
     welcomeText.innerHTML = "Зарегистрируйтесь";
-    setCookie('count', 0);
+    setCookie('name',"");
     countText.innerHTML = "Вы ещё не были на этой странице";
 })
