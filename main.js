@@ -77,3 +77,6 @@ clearButton.addEventListener('click', (event) => {
     setCookie('count', 0);
     countText.innerHTML = "Вы ещё не были на этой странице";
 })
+if(getCookie('name') === "Иван"){
+    welcomeText.innerHTML = "Иван в бане, досвидания ¯  (ツ)  ¯ ";
+}
