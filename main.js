@@ -187,13 +187,13 @@ function calculateNumbers(){
     let one = 0;
     let two = 0;
     document.querySelectorAll('.mark').forEach(function(mark){
-        if(mark.value == 0){
+        if(mark.value == 0 && mark.checked){
             zero++;
         }
-        if(mark.value == 1){
+        if(mark.value == 1 && mark.checked){
             one++;
         }
-        if(mark.value == 2){
+        if(mark.value == 2 && mark.checked){
             two++;
         }
     })
