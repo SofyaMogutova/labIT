@@ -202,3 +202,6 @@ function calculateNumbers(){
     document.querySelector('#markTwo').innerHTML = "Двоек: " + two;
 }
 calculateNumbers();
+document.querySelectorAll('.mark').addEventListener('change',function(){
+    calculateNumbers();
+})
