@@ -35,6 +35,7 @@ const dateText = document.querySelector('#dateText');
 const nameCookie = document.querySelector('#nameCookie');
 const registrationButton = document.querySelector('#registrationButton');
 const clearButton = document.querySelector('#clearButton');
+const exitButton = document.querySelector('#exitButton');
 
 if(getCookie('name') === undefined){
     welcomeText.innerHTML = "Зарегистрируйтесь";
@@ -77,7 +78,9 @@ clearButton.addEventListener('click', (event) => {
     setCookie('count', 0);
     countText.innerHTML = "Вы ещё не были на этой странице";
 })
-if(getCookie('name') === "Иван"){
-    welcomeText.innerHTML = "Иван в бане, досвидания ¯  (ツ)  ¯ ";
-    setCookie('name', 0);
-}
+exitButton.addEventListener('click', (event) => {
+    welcomeText.innerHTML = "Зарегистрируйтесь";
+    setCookie('count', 0);
+    countText.innerHTML = "Вы ещё не были на этой странице";
+    dateText.innerHTML = "";
+})
