@@ -82,5 +82,4 @@ exitButton.addEventListener('click', (event) => {
     welcomeText.innerHTML = "Зарегистрируйтесь";
     setCookie('count', 0);
     countText.innerHTML = "Вы ещё не были на этой странице";
-    dateText.innerHTML = "";
 })
