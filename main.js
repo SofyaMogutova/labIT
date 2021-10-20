@@ -78,9 +78,9 @@ clearButton.addEventListener('click', (event) => {
     setCookie('count', 0);
     countText.innerHTML = "Вы ещё не были на этой странице";
 })
-/*exitButton.addEventListener('click', (event) => {
+exitButton.addEventListener('click', (event) => {
     welcomeText.innerHTML = "Зарегистрируйтесь";
     setCookie('count', 0);
     countText.innerHTML = "Вы ещё не были на этой странице";
     dateText.innerHTML = "";
-})*/
+})
