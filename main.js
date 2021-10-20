@@ -169,10 +169,12 @@ groupSelect.addEventListener('change', (event) => {
     setCource(groupSelect.value);
     fillSubjects(groupSelect.value);
     fillMarks(groupSelect.value, nameSelect.value);
+    calculateNumbers();
 })
 
 nameSelect.addEventListener('change', (event) => {
     fillMarks(groupSelect.value, nameSelect.value);
+    calculateNumbers();
 })
 
 document.querySelector('#buttonBall').addEventListener('click',calculateAverage);
