@@ -71,7 +71,12 @@ else{
 
 registrationButton.addEventListener('click', (event) => {
     setCookie('name', nameCookie.value);
-    welcomeText.innerHTML = "Привет, " + getCookie('name');
+    if (getCookie('name') === "Иван"){
+        welcomeText.innerHTML = "Иван в бане, досвидания ¯  (ツ)  ¯";
+    } 
+    else{
+        welcomeText.innerHTML = "Привет, " + getCookie('name');
+    }
 })
 
 clearButton.addEventListener('click', (event) => {
