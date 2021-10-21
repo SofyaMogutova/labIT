@@ -75,7 +75,7 @@ registrationButton.addEventListener('click', (event) => {
         welcomeText.innerHTML = "Иван в бане, досвидания ¯  (ツ)  ¯";
     } 
     else{
-        welcomeText.innerHTML = "Привет, " + getCookie('name');
+        welcomeText.innerHTML = "Привет, " + getCookie('name');}
 })
 
 clearButton.addEventListener('click', (event) => {
